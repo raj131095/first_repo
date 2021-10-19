@@ -83,8 +83,8 @@ html.H1 ('Stock Ticker Dashboard'),
       html.Div([
             html.H3('select start and end date: '),
               dcc.DatePickerRange( id='my_date_pick',
-                                   min_date_allowed= datetime.date(2019,1,1)
-                                   ,max_date_allowed=datetime.date(2021,12,31),
+                                   min_date_allowed= datetime.date(2019,3,19),
+                                   max_date_allowed=datetime.datetime.now().strftime("%Y-%m-%d"),
                                    start_date=datetime.date(2019,1,1),
                                    end_date=datetime.date.today()),
           ], style={'display':'inline-block'}),
